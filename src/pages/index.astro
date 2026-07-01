@@ -16,7 +16,8 @@ import '../styles/global.css';
 
   <body class="antialiased overflow-x-hidden relative selection:bg-[#05FFD1]/30 min-h-screen">
     
-    <canvas id="starsCanvas" class="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-40"></canvas>
+    <!-- Canvas de estrellas de fondo (Fijo y continuo) -->
+    <canvas id="starsCanvas" class="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-50"></canvas>
     
     <div id="customCursor" class="hidden md:block fixed w-8 h-8 rounded-full border border-[#05FFD1]/60 pointer-events-none z-50 bg-[#00F2FE]/10 blur-[1px] will-change-transform"></div>
 
@@ -28,8 +29,8 @@ import '../styles/global.css';
           <div class="flex items-center gap-6 text-xs font-mono text-slate-400">
             <a href="#sobre-mi" class="hover:text-[#05FFD1] transition-colors">Sobre Mí</a>
             <a href="#experiencia" class="hover:text-[#05FFD1] transition-colors">Trayectoria</a>
-            <a href="#proyectos" class="hover:text-[#05FFD1] transition-colors">Evolución</a>
             <a href="#habilidades" class="hover:text-[#05FFD1] transition-colors">Ecosistema</a>
+            <a href="#proyectos" class="hover:text-[#05FFD1] transition-colors">Evolución</a>
             <a href="/NataliaBlanco_CV.pdf" target="_blank" class="bg-[#05FFD1]/10 text-[#05FFD1] border border-[#05FFD1]/30 px-3 py-1.5 rounded-md hover:bg-[#05FFD1]/20 transition-all font-bold flex items-center gap-1.5">
               <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
               CV .PDF
@@ -38,6 +39,7 @@ import '../styles/global.css';
         </div>
       </nav>
 
+      <!-- SECCIÓN PRINCIPAL DE ENTRADA -->
       <section class="min-h-screen flex flex-col justify-center items-center px-6 relative pt-20">
         <div class="text-center max-w-5xl space-y-8 flex flex-col items-center">
           <div class="reveal-slide tracking-widest text-xs font-mono uppercase bg-[#141E28] border border-[#1F2E3D] text-[#05FFD1] px-4 py-2 rounded-full inline-block shadow-[0_0_15px_rgba(5,255,209,0.1)]">
@@ -85,10 +87,11 @@ import '../styles/global.css';
         </div>
       </section>
 
-      <section id="sobre-mi" class="py-32 max-w-4xl mx-auto px-6 border-t border-[#1F2E3D]/50">
+      <!-- 1. SOBRE MÍ -->
+      <section id="sobre-mi" class="py-32 max-w-4xl mx-auto px-6 border-t border-[#1F2E3D]/50 relative z-10">
         <div class="grid md:grid-cols-12 gap-12 items-center">
           <div class="md:col-span-4 flex justify-center reveal-slide">
-            <div class="relative w-48 h-48 rounded-full p-1 bg-gradient-to-br from-[#05FFD1] to-[#4FACFE] shadow-2xl">
+            <div class="relative w-48 h-48 rounded-full p-1 bg-gradient-to-br from-[#05FFD1] to-[#4FACFE] shadow-2xl transition-transform duration-500 hover:scale-105">
               <div class="w-full h-full rounded-full bg-[#0D131A] overflow-hidden flex items-center justify-center">
                 <span class="text-5xl font-space font-bold text-[#05FFD1]">NB</span>
               </div>
@@ -109,7 +112,8 @@ import '../styles/global.css';
         </div>
       </section>
 
-      <section id="experiencia" class="py-32 bg-[#090D12] border-t border-[#1F2E3D] relative ">
+      <!-- 2. EXPERIENCIA Y FORMACIÓN -->
+      <section id="experiencia" class="py-32 bg-[#090D12]/80 backdrop-blur-sm border-t border-[#1F2E3D] relative z-10">
         <div class="max-w-6xl mx-auto px-6">
           <div class="mb-16 text-center">
             <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-2">// LÍNEA DE TIEMPO</h2>
@@ -120,7 +124,7 @@ import '../styles/global.css';
             <div class="space-y-8">
               <h4 class="text-lg font-space text-[#05FFD1] font-bold tracking-wider uppercase flex items-center gap-2 ">// EXPERIENCIA TRABAJADA</h4>
               
-              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-3">
+              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-3 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)]">
                 <div class="flex justify-between items-start">
                   <div>
                     <h5 class="text-lg font-bold text-slate-200">Técnica en Data & IA</h5>
@@ -135,7 +139,7 @@ import '../styles/global.css';
                 </ul>
               </div>
 
-              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-3" style="transition-delay: 0.1s;">
+              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-3 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)]" style="transition-delay: 0.1s;">
                 <div class="flex justify-between items-start">
                   <div>
                     <h5 class="text-lg font-bold text-slate-200">Operadora de Logística</h5>
@@ -154,19 +158,19 @@ import '../styles/global.css';
             <div class="space-y-8">
               <h4 class="text-lg font-space text-[#05FFD1] font-bold tracking-wider uppercase flex items-center gap-2">// EDUCACIÓN ACADÉMICA</h4>
               
-              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2">
+              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)]">
                 <h5 class="text-lg font-bold text-slate-200">Técnico Superior en DAW</h5>
                 <span class="text-xs text-[#05FFD1] font-mono block">IES Julio Verne (Bargas, Toledo)</span>
                 <p class="text-xs text-slate-400">Especialización avanzada en desarrollo web frontend, backend elástico y despliegue de microservicios integrados.</p>
               </div>
 
-              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2" style="transition-delay: 0.1s;">
+              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)]" style="transition-delay: 0.1s;">
                 <h5 class="text-lg font-bold text-slate-200">Técnico Superior en DAM</h5>
                 <span class="text-xs text-[#05FFD1] font-mono block">IES Julio Verne (Bargas, Toledo)</span>
                 <p class="text-xs text-slate-400">Enfoque en desarrollo nativo multiplataforma, control de subprocesos paralelos y gestión local de bases de datos relacionales.</p>
               </div>
 
-              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2" style="transition-delay: 0.2s;">
+              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)]" style="transition-delay: 0.2s;">
                 <h5 class="text-lg font-bold text-slate-200">Grado en Ingeniería Informática (1º y 2º)</h5>
                 <span class="text-xs text-[#05FFD1] font-mono block">UCLM - Universidad de Castilla-La Mancha</span>
                 <p class="text-xs text-slate-400">Bases analíticas de alto nivel: estructuras matemáticas complejas, análisis algorítmico y fundamentos de computación.</p>
@@ -176,86 +180,13 @@ import '../styles/global.css';
         </div>
       </section>
 
-      <section id="proyectos" class="py-32 max-w-6xl mx-auto px-6" x-data="{ proyecto: 'dam' }">
-        <div class="mb-20 text-center md:text-left">
-          <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-3 reveal-slide">// CASO DE ESTUDIO ARQUITECTÓNICO</h2>
-          <h3 class="text-4xl md:text-6xl font-bold font-space tracking-tight text-slate-100 reveal-slide" style="transition-delay: 0.1s;">
-            Del Software Móvil a la Automatización Cognitiva
-          </h3>
-          
-          <div class="mt-8 inline-flex bg-[#141E28] border border-[#1F2E3D] p-1.5 rounded-xl shadow-inner reveal-slide" style="transition-delay: 0.3s;">
-            <button @click="proyecto = 'dam'" :class="proyecto === 'dam' ? 'bg-gradient-to-r from-[#05FFD1] to-[#00F2FE] text-[#0D131A] shadow-lg' : 'text-slate-400 hover:text-slate-200'" class="px-6 py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer font-space">
-              Fase 01: DAM (Móvil)
-            </button>
-            <button @click="proyecto = 'daw'" :class="proyecto === 'daw' ? 'bg-gradient-to-r from-[#05FFD1] to-[#00F2FE] text-[#0D131A] shadow-lg' : 'text-slate-400 hover:text-slate-200'" class="px-6 py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer font-space">
-              Fase 02: DAW + IA (Web)
-            </button>
-          </div>
-        </div>
-
-        <div class="grid lg:grid-cols-12 gap-16 items-center">
-          <div class="lg:col-span-6 space-y-8">
-            <div x-show="proyecto === 'dam'" x-transition:enter="transition-all duration-700 ease-out" x-transition:enter-start="opacity-0 translate-y-8 filter blur-sm" x-transition:enter-end="opacity-100 translate-y-0 filter blur-0" class="space-y-6">
-              <h4 class="text-3xl font-bold font-space text-slate-200">Gestión Transaccional Multiplataforma</h4>
-              <p class="text-slate-400 text-lg leading-relaxed">
-                Desarrollo en entorno nativo Android con una arquitectura distribuida orientada a servicios. Estructuración analítica de una base de datos relacional para orquestar con precisión quirúrgica un entorno de 4 roles humanos.
-              </p>
-              <div class="p-4 bg-[#141E28]/60 rounded-xl border border-[#1F2E3D] font-mono text-xs text-slate-400 space-y-1">
-                <span class="text-[#05FFD1] font-bold block">// ROLES TRADICIONALES INVOLUCRADOS</span>
-                <p>Cliente • Asistente Operativo • Gestor de Filial • Administrador General</p>
-              </div>
-            </div>
-
-            <div x-show="proyecto === 'daw'" x-transition:enter="transition-all duration-700 ease-out" x-transition:enter-start="opacity-0 translate-y-8 filter blur-sm" x-transition:enter-end="opacity-100 translate-y-0 filter blur-0" x-cloak class="space-y-6">
-              <h4 class="text-3xl font-bold font-space text-slate-200">Migración Arquitectónica e Integración IA</h4>
-              <p class="text-slate-400 text-lg leading-relaxed">
-                Salto disruptivo hacia ecosistemas web basados en JavaScript. Refactorización completa del backend para ganar elasticidad. La innovación clave consistió en optimizar el motor relacional y delegar tareas de soporte masivo a un Agente de Inteligencia Artificial.
-              </p>
-              <div class="p-4 bg-[#00F2FE]/5 rounded-xl border border-[#00F2FE]/20 font-mono text-xs text-slate-400 space-y-1">
-                <span class="text-[#05FFD1] font-bold block">// OPTIMIZACIÓN AGENTE COGNITIVO</span>
-                <p>Un bot de IA asume autónomamente la lógica analítica de los antiguos asistentes físicos.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="lg:col-span-6 flex justify-center reveal-slide" style="transition-delay: 0.2s;">
-            <div id="card3D" class="w-full max-w-sm aspect-[4/5] bg-gradient-to-br from-[#141E28] to-[#0D131A] border border-[#1F2E3D] p-8 rounded-[2rem] shadow-[0_30px_70px_rgba(5,255,209,0.03)] transition-transform duration-200 ease-out relative flex flex-col justify-center items-center overflow-hidden">
-              <div id="cardGlow" class="absolute w-56 h-56 rounded-full bg-[#05FFD1]/10 blur-[50px] pointer-events-none -translate-x-1/2 -translate-y-1/2"></div>
-
-              <div x-show="proyecto === 'dam'" class="w-40 h-72 bg-[#0D131A] border-2 border-[#1F2E3D] rounded-[2rem] p-3 flex flex-col justify-between shadow-2xl relative">
-                <div class="w-12 h-3 bg-[#1F2E3D] rounded-full mx-auto"></div>
-                <div class="space-y-2 flex-1 flex flex-col justify-center">
-                  <div class="bg-[#05FFD1]/10 border border-[#05FFD1]/30 text-[#05FFD1] text-[10px] font-mono py-1 rounded text-center">4 ROLES ACTIVOS</div>
-                  <div class="bg-[#141E28] p-2 rounded text-[10px] font-mono text-slate-400 text-center">Gestión Humana</div>
-                </div>
-                <div class="w-8 h-8 rounded-full border border-[#1F2E3D] mx-auto"></div>
-              </div>
-
-              <div x-show="proyecto === 'daw'" x-cloak class="w-full bg-[#0D131A] rounded-xl border border-[#1F2E3D] shadow-2xl overflow-hidden p-4 space-y-3">
-                <div class="flex gap-1 border-b border-[#1F2E3D] pb-2">
-                  <div class="w-2 h-2 rounded-full bg-[#05FFD1]"></div>
-                  <div class="w-2 h-2 rounded-full bg-[#00F2FE]"></div>
-                  <div class="w-2 h-2 rounded-full bg-[#4FACFE]"></div>
-                </div>
-                <div class="border border-[#05FFD1]/20 rounded-lg p-4 bg-[#05FFD1]/5 flex items-center gap-4 relative overflow-hidden">
-                  <div class="w-10 h-10 rounded-full bg-gradient-to-r from-[#05FFD1] to-[#00F2FE] flex items-center justify-center text-[#0D131A] text-lg shadow-lg shadow-[#05FFD1]/20 animate-pulse">🤖</div>
-                  <div class="space-y-1 flex-1">
-                    <span class="text-xs font-bold text-slate-200 block font-space">AGENTE COGNITIVO</span>
-                    <span class="text-[10px] text-[#05FFD1] block font-mono">Automatizando...</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="habilidades" class="py-32 bg-[#090D12] border-t border-[#1F2E3D] relative">
+      <!-- 3. HABILIDADES, ARSENAL Y CERTIFICACIONES -->
+      <section id="habilidades" class="py-32 bg-[#090D12]/80 backdrop-blur-sm border-t border-[#1F2E3D] relative z-10">
         <div class="max-w-6xl mx-auto px-6">
           
           <div class="mb-20 text-center">
-            <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-2 reveal-slide">// ARSENAL TÉCNICO</h2>
-            <h3 class="text-4xl font-bold font-space tracking-tight text-slate-100 reveal-slide">
+            <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-2">// ARSENAL TÉCNICO</h2>
+            <h3 class="text-4xl font-bold font-space tracking-tight text-slate-100">
               Capacidades & Herramientas del Sistema
             </h3>
           </div>
@@ -401,7 +332,82 @@ import '../styles/global.css';
         </div>
       </section>
 
-      <footer class="py-16 text-center text-xs text-slate-600 border-t border-[#1F2E3D] font-mono">
+      <!-- 4. CASO DE ESTUDIO / PROYECTOS (UBICADO AL FINAL DE LA NARRATIVA) -->
+      <section id="proyectos" x-data="{ proyecto: 'dam' }" class="py-32 max-w-6xl mx-auto px-6 relative z-10 border-t border-[#1F2E3D]/50">
+        <div class="mb-20 text-center md:text-left">
+          <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-3 reveal-slide">// CASO DE ESTUDIO ARQUITECTÓNICO</h2>
+          <h3 class="text-4xl md:text-6xl font-bold font-space tracking-tight text-slate-100 reveal-slide" style="transition-delay: 0.1s;">
+            Del Software Móvil a la Automatización Cognitiva
+          </h3>
+          
+          <div class="mt-8 inline-flex bg-[#141E28] border border-[#1F2E3D] p-1.5 rounded-xl shadow-inner reveal-slide" style="transition-delay: 0.3s;">
+            <button @click="proyecto = 'dam'" :class="proyecto === 'dam' ? 'bg-gradient-to-r from-[#05FFD1] to-[#00F2FE] text-[#0D131A] shadow-lg' : 'text-slate-400 hover:text-slate-200'" class="px-6 py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer font-space">
+              Fase 01: DAM (Móvil)
+            </button>
+            <button @click="proyecto = 'daw'" :class="proyecto === 'daw' ? 'bg-gradient-to-r from-[#05FFD1] to-[#00F2FE] text-[#0D131A] shadow-lg' : 'text-slate-400 hover:text-slate-200'" class="px-6 py-3 rounded-lg text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer font-space">
+              Fase 02: DAW + IA (Web)
+            </button>
+          </div>
+        </div>
+
+        <div class="grid lg:grid-cols-12 gap-16 items-center">
+          <div class="lg:col-span-6 space-y-8">
+            <div x-show="proyecto === 'dam'" x-transition:enter="transition-all duration-700 ease-out" x-transition:enter-start="opacity-0 translate-y-8 filter blur-sm" x-transition:enter-end="opacity-100 translate-y-0 filter blur-0" class="space-y-6">
+              <h4 class="text-3xl font-bold font-space text-slate-200">Gestión Transaccional Multiplataforma</h4>
+              <p class="text-slate-400 text-lg leading-relaxed">
+                Desarrollo en entorno nativo Android con una arquitectura distribuida orientada a servicios. Estructuración analítica de una base de datos relacional para orquestar con precisión quirúrgica un entorno de 4 roles humanos.
+              </p>
+              <div class="p-4 bg-[#141E28]/60 rounded-xl border border-[#1F2E3D] font-mono text-xs text-slate-400 space-y-1">
+                <span class="text-[#05FFD1] font-bold block">// ROLES TRADICIONALES INVOLUCRADOS</span>
+                <p>Cliente • Asistente Operativo • Gestor de Filial • Administrador General</p>
+              </div>
+            </div>
+
+            <div x-show="proyecto === 'daw'" x-transition:enter="transition-all duration-700 ease-out" x-transition:enter-start="opacity-0 translate-y-8 filter blur-sm" x-transition:enter-end="opacity-100 translate-y-0 filter blur-0" x-cloak class="space-y-6">
+              <h4 class="text-3xl font-bold font-space text-slate-200">Migración Arquitectónica e Integración IA</h4>
+              <p class="text-slate-400 text-lg leading-relaxed">
+                Salto disruptivo hacia ecosistemas web basados en JavaScript. Refactorización completa del backend para ganar elasticidad. La innovación clave consistió en optimizar el motor relacional y delegar tareas de soporte masivo a un Agente de Inteligencia Artificial.
+              </p>
+              <div class="p-4 bg-[#00F2FE]/5 rounded-xl border border-[#00F2FE]/20 font-mono text-xs text-slate-400 space-y-1">
+                <span class="text-[#05FFD1] font-bold block">// OPTIMIZACIÓN AGENTE COGNITIVO</span>
+                <p>Un bot de IA asume autónomamente la lógica analítica de los antiguos asistentes físicos.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-6 flex justify-center reveal-slide" style="transition-delay: 0.2s;">
+            <div id="card3D" class="w-full max-w-sm aspect-[4/5] bg-gradient-to-br from-[#141E28] to-[#0D131A] border border-[#1F2E3D] p-8 rounded-[2rem] shadow-[0_30px_70px_rgba(5,255,209,0.03)] transition-transform duration-200 ease-out relative flex flex-col justify-center items-center overflow-hidden">
+              <div id="cardGlow" class="absolute w-56 h-56 rounded-full bg-[#05FFD1]/10 blur-[50px] pointer-events-none -translate-x-1/2 -translate-y-1/2"></div>
+
+              <div x-show="proyecto === 'dam'" x-transition:enter="transition-all duration-500 ease-out" class="w-40 h-72 bg-[#0D131A] border-2 border-[#1F2E3D] rounded-[2rem] p-3 flex flex-col justify-between shadow-2xl relative">
+                <div class="w-12 h-3 bg-[#1F2E3D] rounded-full mx-auto"></div>
+                <div class="space-y-2 flex-1 flex flex-col justify-center">
+                  <div class="bg-[#05FFD1]/10 border border-[#05FFD1]/30 text-[#05FFD1] text-[10px] font-mono py-1 rounded text-center">4 ROLES ACTIVOS</div>
+                  <div class="bg-[#141E28] p-2 rounded text-[10px] font-mono text-slate-400 text-center">Gestión Humana</div>
+                </div>
+                <div class="w-8 h-8 rounded-full border border-[#1F2E3D] mx-auto"></div>
+              </div>
+
+              <div x-show="proyecto === 'daw'" x-cloak x-transition:enter="transition-all duration-500 ease-out" class="w-full bg-[#0D131A] rounded-xl border border-[#1F2E3D] shadow-2xl overflow-hidden p-4 space-y-3">
+                <div class="flex gap-1 border-b border-[#1F2E3D] pb-2">
+                  <div class="w-2 h-2 rounded-full bg-[#05FFD1]"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#00F2FE]"></div>
+                  <div class="w-2 h-2 rounded-full bg-[#4FACFE]"></div>
+                </div>
+                <div class="border border-[#05FFD1]/20 rounded-lg p-4 bg-[#05FFD1]/5 flex items-center gap-4 relative overflow-hidden">
+                  <div class="w-10 h-10 rounded-full bg-gradient-to-r from-[#05FFD1] to-[#00F2FE] flex items-center justify-center text-[#0D131A] text-lg shadow-lg shadow-[#05FFD1]/20 animate-pulse">🤖</div>
+                  <div class="space-y-1 flex-1">
+                    <span class="text-xs font-bold text-slate-200 block font-space">AGENTE COGNITIVO</span>
+                    <span class="text-[10px] text-[#05FFD1] block font-mono">Automatizando...</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="py-16 text-center text-xs text-slate-600 border-t border-[#1F2E3D] font-mono relative z-10">
         <p>© 2026 NATALIA BLANCO DÍAZ. SISTEMA OPERATIVO CONSTRUIDO BAJO ASTRO + TAILWIND V4.</p>
       </footer>
 
@@ -410,6 +416,11 @@ import '../styles/global.css';
 </html>
 
 <script>
+  if (history.scrollRestoration) {
+    history.scrollRestoration = 'manual';
+  }
+  window.scrollTo(0, 0);
+
   const canvas = document.getElementById('starsCanvas');
   const ctx = canvas.getContext('2d');
   let stars = [];
@@ -491,8 +502,6 @@ import '../styles/global.css';
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('active');
-      } else {
-        entry.target.classList.remove('active');
       }
     });
   }, observerOptions);
@@ -527,7 +536,6 @@ import '../styles/global.css';
     filter: blur(0);
   }
 
-  /* REFACTORIZACIÓN MAESTRA DE FILTROS MONOCROMÁTICOS EN CIAN PURE (#05FFD1) */
   .tech-tag {
     position: relative;
     width: 52px;
@@ -543,7 +551,6 @@ import '../styles/global.css';
     color: #05FFD1;
   }
 
-  /* Esta combinación elimina por completo los verdes y fuerza un cian monocromático puro */
   .tech-tag img, .tech-tag svg {
     width: 100%;
     height: 100%;
