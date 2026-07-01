@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-calido-fondo: #F9F6F0;
+  --color-calido-tarjeta: #F1EBE1;
+  --color-calido-texto: #1A1A1A;
+  --color-calido-secundario: #706556;
+  --color-calido-acento: #D46A43;
+  --color-calido-acentoHover: #B8542F;
+  
+  --font-sans: "Plus Jakarta Sans", "Inter", sans-serif;
+}
