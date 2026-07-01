@@ -7,7 +7,7 @@ import '../styles/global.css';
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Natalia Blanco | Portfolio Creativo</title>
+    <title>Natalia Blanco | Portfolio Profesional Full-Stack</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -16,57 +16,169 @@ import '../styles/global.css';
 
   <body class="antialiased overflow-x-hidden relative selection:bg-[#05FFD1]/30 min-h-screen">
     
-    <!-- FONDO DINÁMICO: Lienzo de destellos cian/menta eléctricos -->
     <canvas id="starsCanvas" class="fixed inset-0 w-full h-full pointer-events-none z-0 opacity-40"></canvas>
     
-    <!-- CURSOR MAGNÉTICO PERSONALIZADO -->
-    <div id="customCursor" class="hidden md:block fixed w-8 h-8 rounded-full border border-[#05FFD1]/60 pointer-events-none z-50 transition-transform duration-100 -translate-x-1/2 -translate-y-1/2 bg-[#00F2FE]/10 blur-[1px]"></div>
+    <div id="customCursor" class="hidden md:block fixed w-8 h-8 rounded-full border border-[#05FFD1]/60 pointer-events-none z-50 bg-[#00F2FE]/10 blur-[1px] will-change-transform"></div>
 
-    <!-- CONTENEDOR DE LA INTERFAZ -->
     <div class="relative z-10">
 
-      <!-- 1. HERO SECTION -->
-      <section class="min-h-screen flex flex-col justify-center items-center px-6 relative select-none">
+      <nav class="fixed top-0 left-0 w-full bg-[#0D131A]/80 backdrop-blur-md border-b border-[#1F2E3D] z-40 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+          <span class="font-space font-bold text-sm tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#05FFD1] to-[#00F2FE]">NBD.DEV</span>
+          <div class="flex items-center gap-6 text-xs font-mono text-slate-400">
+            <a href="#sobre-mi" class="hover:text-[#05FFD1] transition-colors">Sobre Mí</a>
+            <a href="#experiencia" class="hover:text-[#05FFD1] transition-colors">Trayectoria</a>
+            <a href="#proyectos" class="hover:text-[#05FFD1] transition-colors">Evolución</a>
+            <a href="#habilidades" class="hover:text-[#05FFD1] transition-colors">Ecosistema</a>
+            <a href="/NataliaBlanco_CV.pdf" target="_blank" class="bg-[#05FFD1]/10 text-[#05FFD1] border border-[#05FFD1]/30 px-3 py-1.5 rounded-md hover:bg-[#05FFD1]/20 transition-all font-bold flex items-center gap-1.5">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+              CV .PDF
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <section class="min-h-screen flex flex-col justify-center items-center px-6 relative pt-20">
         <div class="text-center max-w-5xl space-y-8 flex flex-col items-center">
-          
           <div class="reveal-slide tracking-widest text-xs font-mono uppercase bg-[#141E28] border border-[#1F2E3D] text-[#05FFD1] px-4 py-2 rounded-full inline-block shadow-[0_0_15px_rgba(5,255,209,0.1)]">
-            // STATUS: ECO SITEMA AUTÓNOMO ACTIVO
+            // STATUS: INGENIERÍA DEL DATO Y DESARROLLO FULL-STACK ACTIVO
           </div>
           
-          <!-- Título con efecto Cortina CSS Nativo (Hero) -->
           <h1 class="text-6xl sm:text-7xl md:text-9xl font-extrabold tracking-tighter uppercase font-space leading-none py-2 flex flex-col gap-2">
             <span class="overflow-hidden block">
-              <span class="block text-transparent bg-clip-text bg-gradient-to-r from-slate-100 via-slate-300 to-[#4FACFE] animate-hero-reveal">
+              <span class="block text-transparent bg-clip-text bg-gradient-to-r from-slate-100 via-slate-300 to-[#05FFD1] animate-hero-reveal">
                 Natalia
               </span>
             </span>
             <span class="overflow-hidden block">
-              <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#05FFD1] via-[#00F2FE] to-[#4FACFE] animate-hero-reveal" style="animation-delay: 0.2s;">
+              <span class="block text-transparent bg-clip-text bg-gradient-to-r from-[#05FFD1] via-[#00F2FE] to-[#00d5ff] animate-hero-reveal" style="animation-delay: 0.2s;">
                 Blanco
               </span>
             </span>
           </h1>
 
           <p class="text-lg md:text-2xl text-slate-400 font-light max-w-2xl mx-auto leading-relaxed text-balance reveal-slide" style="transition-delay: 0.5s;">
-            Desarrolladora Full-Stack combinando <span class="text-[#05FFD1] font-semibold">Ingeniería del Dato</span> y sistemas autónomos basados en Inteligencia Artificial.
+            Desarrolladora Full-Stack • Doble Graduada en DAM y DAW con bases en Ingeniería Informática (UCLM).
           </p>
 
+          <div class="flex flex-wrap gap-4 justify-center reveal-slide" style="transition-delay: 0.6s;">
+            <a href="/NataliaBlanco_CV.pdf" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-[#05FFD1]/20 to-[#00F2FE]/20 border border-[#05FFD1]/50 text-xs font-mono font-bold text-[#05FFD1] hover:scale-105 transition-all shadow-[0_0_15px_rgba(5,255,209,0.1)]">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+              Descargar CV (PDF)
+            </a>
+            <a href="https://github.com/" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#141E28] border border-[#1F2E3D] hover:border-[#05FFD1] text-xs font-mono transition-all text-slate-300 hover:text-slate-100">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.42 2.865 8.166 6.839 9.489.5.092.682-.217.682-.483 0-.237-.008-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.137 20.162 22 16.418 22 12c0-5.523-4.477-10-10-10z" clip-rule="evenodd"/></svg>
+              GitHub
+            </a>
+            <a href="https://linkedin.com/" target="_blank" class="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#141E28] border border-[#1F2E3D] hover:border-[#05FFD1] text-xs font-mono transition-all text-slate-300 hover:text-slate-100">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+
           <div class="pt-4 reveal-slide" style="transition-delay: 0.7s;">
-            <a href="#proyectos" class="inline-flex items-center gap-3 bg-gradient-to-r from-[#05FFD1] to-[#00F2FE] text-[#0D131A] px-8 py-4 rounded-full font-bold hover:brightness-110 transition-all duration-500 transform hover:scale-105 shadow-xl shadow-[#05FFD1]/10 text-xs tracking-wider uppercase font-space">
-              Ver ecosistema
-              <svg class="w-4 h-4 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            <a href="#sobre-mi" class="inline-flex items-center gap-3 bg-gradient-to-r from-[#05FFD1] to-[#00F2FE] text-[#0D131A] px-8 py-4 rounded-full font-bold hover:brightness-110 transition-all duration-500 transform hover:scale-105 shadow-xl shadow-[#05FFD1]/10 text-xs tracking-wider uppercase font-space">
+              Explorar Perfil
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7m0 0l-7-7m7 7V3"></path></svg>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- 2. PROYECTOS / METAMORFOSIS INTERACTIVA 3D -->
+      <section id="sobre-mi" class="py-32 max-w-4xl mx-auto px-6 border-t border-[#1F2E3D]/50">
+        <div class="grid md:grid-cols-12 gap-12 items-center">
+          <div class="md:col-span-4 flex justify-center reveal-slide">
+            <div class="relative w-48 h-48 rounded-full p-1 bg-gradient-to-br from-[#05FFD1] to-[#4FACFE] shadow-2xl">
+              <div class="w-full h-full rounded-full bg-[#0D131A] overflow-hidden flex items-center justify-center">
+                <span class="text-5xl font-space font-bold text-[#05FFD1]">NB</span>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-8 space-y-6 reveal-slide" style="transition-delay: 0.1s;">
+            <span class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest">// PERFIL PROFESIONAL</span>
+            <h2 class="text-3xl font-bold font-space text-slate-100">Resolviendo flujos analíticos complejos</h2>
+            <p class="text-slate-400 leading-relaxed">
+              Mi trayectoria combina una base rigurosa en los dos primeros cursos de <strong>Ingeniería Informática (UCLM)</strong> con la especialización práctica del doble grado en <strong>DAM y DAW</strong>. Mi paso por entornos industriales altamente automatizados y mi experiencia en Data & IA en <strong>Inetum</strong> me han dotado de una mentalidad analítica habituada a la arquitectura limpia de procesos y la gestión avanzada de bases de datos.
+            </p>
+            <div class="flex flex-wrap gap-3 font-mono text-[11px] text-[#05FFD1]">
+              <span class="px-3 py-1 bg-[#141E28] border border-[#1F2E3D] rounded-md">#DataEngineering</span>
+              <span class="px-3 py-1 bg-[#141E28] border border-[#1F2E3D] rounded-md">#FullStack</span>
+              <span class="px-3 py-1 bg-[#141E28] border border-[#1F2E3D] rounded-md">#IndustrialAutomation</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiencia" class="py-32 bg-[#090D12] border-t border-[#1F2E3D] relative ">
+        <div class="max-w-6xl mx-auto px-6">
+          <div class="mb-16 text-center">
+            <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-2">// LÍNEA DE TIEMPO</h2>
+            <h3 class="text-4xl font-bold font-space text-slate-100">Experiencia y Formación</h3>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-8">
+              <h4 class="text-lg font-space text-[#05FFD1] font-bold tracking-wider uppercase flex items-center gap-2 ">// EXPERIENCIA TRABAJADA</h4>
+              
+              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-3">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h5 class="text-lg font-bold text-slate-200">Técnica en Data & IA</h5>
+                    <span class="text-xs text-slate-400 font-mono">Inetum (Prácticas)</span>
+                  </div>
+                  <span class="text-xs bg-[#05FFD1]/10 text-[#05FFD1] font-mono px-2 py-1 rounded border border-[#05FFD1]/20">Data Stage</span>
+                </div>
+                <ul class="text-xs text-slate-400 space-y-2 list-disc list-inside">
+                  <li>Desarrollo y mantenimiento de procesos ETL con Pentaho Data Integration.</li>
+                  <li>Gestión y optimización de consultas SQL sobre Oracle 12c y MySQL.</li>
+                  <li>Soporte en la automatización de procesos mediante Jenkins y Power BI.</li>
+                </ul>
+              </div>
+
+              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-3" style="transition-delay: 0.1s;">
+                <div class="flex justify-between items-start">
+                  <div>
+                    <h5 class="text-lg font-bold text-slate-200">Operadora de Logística</h5>
+                    <span class="text-xs text-slate-400 font-mono">Laboratorios Indas / Joma Sport</span>
+                  </div>
+                  <span class="text-xs bg-[#05FFD1]/10 text-[#05FFD1] font-mono px-2 py-1 rounded border border-[#05FFD1]/20">Automatización</span>
+                </div>
+                <ul class="text-xs text-slate-400 space-y-2 list-disc list-inside">
+                  <li>Gestión de procesos logísticos en líneas de producción automatizadas.</li>
+                  <li>Manejo de sistemas digitales de inventario y preparación de pedidos.</li>
+                  <li>Control de stock y verificación de la trazabilidad en alta productividad.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="space-y-8">
+              <h4 class="text-lg font-space text-[#05FFD1] font-bold tracking-wider uppercase flex items-center gap-2">// EDUCACIÓN ACADÉMICA</h4>
+              
+              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2">
+                <h5 class="text-lg font-bold text-slate-200">Técnico Superior en DAW</h5>
+                <span class="text-xs text-[#05FFD1] font-mono block">IES Julio Verne (Bargas, Toledo)</span>
+                <p class="text-xs text-slate-400">Especialización avanzada en desarrollo web frontend, backend elástico y despliegue de microservicios integrados.</p>
+              </div>
+
+              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2" style="transition-delay: 0.1s;">
+                <h5 class="text-lg font-bold text-slate-200">Técnico Superior en DAM</h5>
+                <span class="text-xs text-[#05FFD1] font-mono block">IES Julio Verne (Bargas, Toledo)</span>
+                <p class="text-xs text-slate-400">Enfoque en desarrollo nativo multiplataforma, control de subprocesos paralelos y gestión local de bases de datos relacionales.</p>
+              </div>
+
+              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2" style="transition-delay: 0.2s;">
+                <h5 class="text-lg font-bold text-slate-200">Grado en Ingeniería Informática (1º y 2º)</h5>
+                <span class="text-xs text-[#05FFD1] font-mono block">UCLM - Universidad de Castilla-La Mancha</span>
+                <p class="text-xs text-slate-400">Bases analíticas de alto nivel: estructuras matemáticas complejas, análisis algorítmico y fundamentos de computación.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="proyectos" class="py-32 max-w-6xl mx-auto px-6" x-data="{ proyecto: 'dam' }">
-        
         <div class="mb-20 text-center md:text-left">
-          <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-3 reveal-slide">// EVOLUCIÓN ACADÉMICA</h2>
-          
-          <!-- Título corregido: Estructura nativa súper estable sin riesgo de desaparición -->
+          <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-3 reveal-slide">// CASO DE ESTUDIO ARQUITECTÓNICO</h2>
           <h3 class="text-4xl md:text-6xl font-bold font-space tracking-tight text-slate-100 reveal-slide" style="transition-delay: 0.1s;">
             Del Software Móvil a la Automatización Cognitiva
           </h3>
@@ -82,12 +194,11 @@ import '../styles/global.css';
         </div>
 
         <div class="grid lg:grid-cols-12 gap-16 items-center">
-          <!-- Textos Técnicos -->
           <div class="lg:col-span-6 space-y-8">
             <div x-show="proyecto === 'dam'" x-transition:enter="transition-all duration-700 ease-out" x-transition:enter-start="opacity-0 translate-y-8 filter blur-sm" x-transition:enter-end="opacity-100 translate-y-0 filter blur-0" class="space-y-6">
               <h4 class="text-3xl font-bold font-space text-slate-200">Gestión Transaccional Multiplataforma</h4>
               <p class="text-slate-400 text-lg leading-relaxed">
-                Desarrollo en entorno nativo Android (Java) con una arquitectura distribuida orientada a servicios. Estructuración analítica de una base de datos relacional para orquestar con precisión quirúrgica un entorno de 4 roles humanos.
+                Desarrollo en entorno nativo Android con una arquitectura distribuida orientada a servicios. Estructuración analítica de una base de datos relacional para orquestar con precisión quirúrgica un entorno de 4 roles humanos.
               </p>
               <div class="p-4 bg-[#141E28]/60 rounded-xl border border-[#1F2E3D] font-mono text-xs text-slate-400 space-y-1">
                 <span class="text-[#05FFD1] font-bold block">// ROLES TRADICIONALES INVOLUCRADOS</span>
@@ -107,12 +218,10 @@ import '../styles/global.css';
             </div>
           </div>
 
-          <!-- CONTENEDOR 3D INTERACTIVO -->
           <div class="lg:col-span-6 flex justify-center reveal-slide" style="transition-delay: 0.2s;">
             <div id="card3D" class="w-full max-w-sm aspect-[4/5] bg-gradient-to-br from-[#141E28] to-[#0D131A] border border-[#1F2E3D] p-8 rounded-[2rem] shadow-[0_30px_70px_rgba(5,255,209,0.03)] transition-transform duration-200 ease-out relative flex flex-col justify-center items-center overflow-hidden">
               <div id="cardGlow" class="absolute w-56 h-56 rounded-full bg-[#05FFD1]/10 blur-[50px] pointer-events-none -translate-x-1/2 -translate-y-1/2"></div>
 
-              <!-- Simulación Móvil DAM -->
               <div x-show="proyecto === 'dam'" class="w-40 h-72 bg-[#0D131A] border-2 border-[#1F2E3D] rounded-[2rem] p-3 flex flex-col justify-between shadow-2xl relative">
                 <div class="w-12 h-3 bg-[#1F2E3D] rounded-full mx-auto"></div>
                 <div class="space-y-2 flex-1 flex flex-col justify-center">
@@ -122,7 +231,6 @@ import '../styles/global.css';
                 <div class="w-8 h-8 rounded-full border border-[#1F2E3D] mx-auto"></div>
               </div>
 
-              <!-- Simulación Web DAW -->
               <div x-show="proyecto === 'daw'" x-cloak class="w-full bg-[#0D131A] rounded-xl border border-[#1F2E3D] shadow-2xl overflow-hidden p-4 space-y-3">
                 <div class="flex gap-1 border-b border-[#1F2E3D] pb-2">
                   <div class="w-2 h-2 rounded-full bg-[#05FFD1]"></div>
@@ -142,63 +250,157 @@ import '../styles/global.css';
         </div>
       </section>
 
-      <!-- 3. INTERFAZ BENTO GRID EXPERIMENTAL -->
-      <section class="py-32 bg-[#090D12] border-t border-[#1F2E3D] relative">
+      <section id="habilidades" class="py-32 bg-[#090D12] border-t border-[#1F2E3D] relative">
         <div class="max-w-6xl mx-auto px-6">
           
           <div class="mb-20 text-center">
-            <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-2 reveal-slide">// CORE INGENIERÍA</h2>
+            <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-2 reveal-slide">// ARSENAL TÉCNICO</h2>
             <h3 class="text-4xl font-bold font-space tracking-tight text-slate-100 reveal-slide">
-              Capacidades del Sistema
+              Capacidades & Herramientas del Sistema
             </h3>
           </div>
 
-          <div class="grid md:grid-cols-3 gap-6">
-            <!-- Bloque Grande 1 -->
-            <div class="md:col-span-2 bg-[#141E28]/40 border border-[#1F2E3D] p-8 rounded-3xl reveal-slide flex flex-col justify-between group hover:border-[#05FFD1]/40 transition-all duration-500 min-h-[250px]">
-              <div class="space-y-3">
-                <span class="text-2xl group-hover:rotate-12 block transition-transform duration-300 w-fit">⚡</span>
-                <h4 class="text-xl font-bold font-space text-slate-200">Lógica de Datos & Motores Relacionales</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Modelado matemático y estructuración relacional de bases de datos de alto rendimiento. Optimización de consultas complejas y control estricto de concurrencia de accesos.</p>
+          <div class="grid md:grid-cols-2 gap-8">
+            
+            <div class="bg-[#141E28]/40 border border-[#1F2E3D] p-8 rounded-3xl reveal-slide flex flex-col justify-between group hover:border-[#05FFD1]/40 transition-all duration-500">
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <span class="text-[#05FFD1] font-mono text-sm font-bold">&lt;/&gt;</span>
+                  <h4 class="text-lg font-bold font-space text-slate-200">Lenguajes de Programación</h4>
+                </div>
+                <div class="flex flex-wrap gap-x-3 gap-y-6 pt-4">
+                  <div class="tech-tag" data-label="Java"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/java.svg" alt="Java" /></div>
+                  <div class="tech-tag" data-label="Kotlin"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/kotlin.svg" alt="Kotlin" /></div>
+                  <div class="tech-tag" data-label="JavaScript"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" alt="JavaScript" /></div>
+                  <div class="tech-tag" data-label="PHP"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/php.svg" alt="PHP" /></div>
+                  <div class="tech-tag" data-label="Python"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg" alt="Python" /></div>
+                  <div class="tech-tag" data-label="SQL">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4" />
+                    </svg>
+                  </div>
+                  <div class="tech-tag" data-label="C#"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/csharp.svg" alt="C#" /></div>
+                  <div class="tech-tag" data-label="Node.js"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nodedotjs.svg" alt="Node.js" /></div>
+                </div>
               </div>
-              <span class="text-[10px] font-mono text-[#05FFD1] tracking-widest uppercase">// INFRAESTRUCTURA • SQL</span>
             </div>
 
-            <!-- Bloque Pequeño 1 -->
-            <div class="bg-[#141E28]/40 border border-[#1F2E3D] p-8 rounded-3xl reveal-slide flex flex-col justify-between group hover:border-[#05FFD1]/40 transition-all duration-500" style="transition-delay: 0.1s;">
-              <div class="space-y-3">
-                <span class="text-2xl block group-hover:scale-110 transition-transform">💻</span>
-                <h4 class="text-xl font-bold font-space text-slate-200">Desarrollo Full-Stack</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Ecosistemas acoplados de frontend modular y backends dinámicos y limpios.</p>
+            <div class="bg-[#141E28]/40 border border-[#1F2E3D] p-8 rounded-3xl reveal-slide flex flex-col justify-between group hover:border-[#05FFD1]/40 transition-all duration-500">
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <span class="text-[#05FFD1] text-lg">🌐</span>
+                  <h4 class="text-lg font-bold font-space text-slate-200">Desarrollo Web / Frontend</h4>
+                </div>
+                <div class="flex flex-wrap gap-x-3 gap-y-6 pt-4">
+                  <div class="tech-tag" data-label="Angular"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/angular.svg" alt="Angular" /></div>
+                  <div class="tech-tag" data-label="HTML5"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg" alt="HTML5" /></div>
+                  <div class="tech-tag" data-label="CSS3"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg" alt="CSS3" /></div>
+                  <div class="tech-tag" data-label="Tailwind CSS"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg" alt="Tailwind CSS" /></div>
+                </div>
               </div>
-              <span class="text-[10px] font-mono text-[#05FFD1] tracking-widest uppercase">// ES6 • JAVA • PHP</span>
             </div>
 
-            <!-- Bloque Pequeño 2 -->
-            <div class="bg-[#141E28]/40 border border-[#1F2E3D] p-8 rounded-3xl reveal-slide flex flex-col justify-between group hover:border-[#05FFD1]/40 transition-all duration-500" style="transition-delay: 0.2s;">
-              <div class="space-y-3">
-                <span class="text-2xl block group-hover:animate-pulse">🧠</span>
-                <h4 class="text-xl font-bold font-space text-slate-200">Integración de Agentes IA</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Automatización inteligente sustituyendo lógica repetitiva humana por modelos autónomos cognitivos.</p>
+            <div class="bg-[#141E28]/40 border border-[#1F2E3D] p-8 rounded-3xl reveal-slide flex flex-col justify-between group hover:border-[#05FFD1]/40 transition-all duration-500">
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <span class="text-[#05FFD1] text-lg">🗄️</span>
+                  <h4 class="text-lg font-bold font-space text-slate-200">Bases de Datos & Almacenamiento</h4>
+                </div>
+                <div class="flex flex-wrap gap-x-3 gap-y-6 pt-4">
+                  <div class="tech-tag" data-label="Oracle 12c"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/oracle.svg" alt="Oracle" /></div>
+                  <div class="tech-tag" data-label="MySQL (InnoDB)"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mysql.svg" alt="MySQL" /></div>
+                  <div class="tech-tag" data-label="MongoDB"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/mongodb.svg" alt="MongoDB" /></div>
+                  <div class="tech-tag" data-label="Data Warehouses"><span class="text-[9px] text-[#05FFD1] font-bold text-center leading-none">DWH<br>DMs</span></div>
+                </div>
               </div>
-              <span class="text-[10px] font-mono text-[#05FFD1] tracking-widest uppercase">// AGENTES • AUTOMACIÓN</span>
             </div>
 
-            <!-- Bloque Grande 2 -->
-            <div class="md:col-span-2 bg-gradient-to-br from-[#00F2FE]/5 to-[#141E28]/20 border border-[#00F2FE]/20 p-8 rounded-3xl reveal-slide flex flex-col justify-between hover:border-[#05FFD1]/50 transition-all duration-500 min-h-[250px]" style="transition-delay: 0.3s;">
-              <div class="space-y-3">
-                <span class="text-2xl text-[#05FFD1] block">👁️‍cza</span>
-                <h4 class="text-xl font-bold font-space text-slate-200">Resolución de Complejidad Organizativa</h4>
-                <p class="text-slate-400 text-sm leading-relaxed">Mi propuesta de valor diferenciadora no se limita a escribir código limpio. Radica en la capacidad adquirida para auditar flujos analíticos confusos y desestructurados de cuatro o más niveles de accesos de personal para sintetizarlos en software fluido, centralizado y optimizado.</p>
+            <div class="bg-[#141E28]/40 border border-[#1F2E3D] p-8 rounded-3xl reveal-slide flex flex-col justify-between group hover:border-[#05FFD1]/40 transition-all duration-500">
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <span class="text-[#05FFD1] text-lg">🛠️</span>
+                  <h4 class="text-lg font-bold font-space text-slate-200">Herramientas & Tecnologías</h4>
+                </div>
+                <div class="flex flex-wrap gap-x-3 gap-y-6 pt-4">
+                  <div class="tech-tag" data-label="Pentaho PDI"><span class="text-[10px] font-bold text-[#05FFD1]">PDI</span></div>
+                  <div class="tech-tag" data-label="Power BI"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/powerbi.svg" alt="Power BI" /></div>
+                  <div class="tech-tag" data-label="Android Studio"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/androidstudio.svg" alt="Android Studio" /></div>
+                  <div class="tech-tag" data-label="DBeaver">
+                    <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-full h-full">
+                      <path d="M16 3c-5.5 0-10 3.1-10 7 0 2.1 1.3 4 3.5 5.3C6.4 17.5 4 21.2 4 25.5c0 .8.7 1.5 1.5 1.5h21c.8 0 1.5-.7 1.5-1.5 0-4.3-2.4-8-5.5-10.2 2.2-1.3 3.5-3.2 3.5-5.3 0-3.9-4.5-7-10-7z"/>
+                      <circle cx="12" cy="10" r="1.5" fill="currentColor"/>
+                      <circle cx="20" cy="10" r="1.5" fill="currentColor"/>
+                      <path d="M13 15s1.5 2 3 2 3-2 3-2"/>
+                    </svg>
+                  </div>
+                  <div class="tech-tag" data-label="Postman"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/postman.svg" alt="Postman" /></div>
+                </div>
               </div>
-              <span class="text-[10px] font-mono text-[#05FFD1] tracking-widest uppercase">// VISIÓN CRÍTICA • ARQUITECTURA</span>
+            </div>
+
+            <div class="bg-[#141E28]/40 border border-[#1F2E3D] p-8 rounded-3xl reveal-slide flex flex-col justify-between group hover:border-[#05FFD1]/40 transition-all duration-500">
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <span class="text-[#05FFD1] text-lg">☁️</span>
+                  <h4 class="text-lg font-bold font-space text-slate-200">DevOps & Cloud</h4>
+                </div>
+                <div class="flex flex-wrap gap-x-3 gap-y-6 pt-4">
+                  <div class="tech-tag" data-label="Jenkins"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/jenkins.svg" alt="Jenkins" /></div>
+                  <div class="tech-tag" data-label="Docker"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/docker.svg" alt="Docker" /></div>
+                  <div class="tech-tag" data-label="Git / GitHub"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" /></div>
+                  <div class="tech-tag" data-label="OCI Cloud"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/oracle.svg" alt="OCI" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-[#141E28]/40 border border-[#1F2E3D] p-8 rounded-3xl reveal-slide flex flex-col justify-between group hover:border-[#05FFD1]/40 transition-all duration-500">
+              <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                  <span class="text-[#05FFD1] text-lg">📱</span>
+                  <h4 class="text-lg font-bold font-space text-slate-200">Desarrollo Móvil & Multimedia</h4>
+                </div>
+                <div class="flex flex-wrap gap-x-3 gap-y-6 pt-4">
+                  <div class="tech-tag" data-label="Android Studio"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/androidstudio.svg" alt="Android Studio" /></div>
+                  <div class="tech-tag" data-label="Kotlin"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/kotlin.svg" alt="Kotlin" /></div>
+                  <div class="tech-tag" data-label="Unity"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/unity.svg" alt="Unity" /></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="md:col-span-2 bg-[#141E28]/20 border border-[#1F2E3D] p-6 rounded-3xl reveal-slide grid sm:grid-cols-3 gap-6 items-center hover:border-[#05FFD1]/40 transition-all duration-500">
+              <div class="flex items-center gap-2 text-xs font-mono font-bold text-slate-300">
+                <span class="text-[#05FFD1]">★</span> OTRAS HERRAMIENTAS:
+              </div>
+              <div class="flex items-center gap-3 text-[11px] font-mono text-slate-400">
+                <div class="tech-tag !w-11 !h-11 !p-2 text-lg" data-label="Seguridad SSOO">🔐</div>
+                <span>SSOO (Autenticación y Autorización)</span>
+              </div>
+              <div class="flex gap-4 justify-end">
+                <div class="tech-tag !w-12 !h-12 !p-2.5" data-label="Windows"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/windows.svg" alt="Windows" /></div>
+                <div class="tech-tag !w-12 !h-12 !p-2.5" data-label="Linux"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linux.svg" alt="Linux" /></div>
+                <div class="tech-tag !w-12 !h-12 !p-2.5" data-label="macOS"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/apple.svg" alt="macOS" /></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="mt-8 bg-gradient-to-br from-[#00F2FE]/5 to-[#141E28]/20 border border-[#1F2E3D] p-8 rounded-3xl reveal-slide hover:border-[#05FFD1]/40 transition-all duration-500">
+            <h4 class="text-xl font-bold font-space text-slate-200 mb-4 flex items-center gap-3">
+              <span class="text-[#05FFD1]">🎓</span> Certificaciones Oficiales del Ecosistema
+            </h4>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-slate-400 font-mono">
+              <div class="hover:text-[#05FFD1] transition-colors">✓ Fundamentos de Python I & II — Cisco Academy</div>
+              <div class="hover:text-[#05FFD1] transition-colors">✓ Programa de Inteligencia Artificial — Cámara de Comercio</div>
+              <div class="hover:text-[#05FFD1] transition-colors">✓ Quantum Programming Foundations — QANSWER</div>
+              <div class="hover:text-[#05FFD1] transition-colors">✓ Impresión 3D y Competencias Digitales — Cámara de Comercio</div>
+              <div class="hover:text-[#05FFD1] transition-colors">✓ Certificación Oficial Inglés — Aptis (British Council)</div>
+              <div class="hover:text-[#05FFD1] transition-colors">✓ Idioma Español — Nativo</div>
             </div>
           </div>
 
         </div>
       </section>
 
-      <!-- FOOTER -->
       <footer class="py-16 text-center text-xs text-slate-600 border-t border-[#1F2E3D] font-mono">
         <p>© 2026 NATALIA BLANCO DÍAZ. SISTEMA OPERATIVO CONSTRUIDO BAJO ASTRO + TAILWIND V4.</p>
       </footer>
@@ -207,9 +409,7 @@ import '../styles/global.css';
   </body>
 </html>
 
-<!-- SCRIPTS DE ANIMACIONES -->
 <script>
-  // 1. CANVAS DE PARTICULAS FLUIDAS
   const canvas = document.getElementById('starsCanvas');
   const ctx = canvas.getContext('2d');
   let stars = [];
@@ -254,13 +454,20 @@ import '../styles/global.css';
   resizeCanvas();
   animateStars();
 
-  // 2. CURSOR INTELIGENTE
   const cursor = document.getElementById('customCursor');
+  let mouseX = 0, mouseY = 0;
+
   document.addEventListener('mousemove', (e) => {
-    cursor.style.transform = `translate3d(${e.clientX}px, ${e.clientY}px, 0)`;
+    mouseX = e.clientX;
+    mouseY = e.clientY;
   });
 
-  // 3. EFECTO TARJETA 3D
+  function updateCursorPosition() {
+    cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;
+    requestAnimationFrame(updateCursorPosition);
+  }
+  requestAnimationFrame(updateCursorPosition);
+
   const card = document.getElementById('card3D');
   const glow = document.getElementById('cardGlow');
 
@@ -279,14 +486,13 @@ import '../styles/global.css';
     card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)';
   });
 
-  // 4. INTERSECTION OBSERVER ULTRA CONFIABLE (Maneja todo el render de scroll)
-  const observerOptions = { threshold: 0.1, rootMargin: "0px 0px -40px 0px" };
-
+  const observerOptions = { threshold: 0.05, rootMargin: "0px 0px -20px 0px" };
   const slideObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('active');
-        slideObserver.unobserve(entry.target);
+      } else {
+        entry.target.classList.remove('active');
       }
     });
   }, observerOptions);
@@ -296,37 +502,90 @@ import '../styles/global.css';
 
 <style is:global>
   [x-cloak] { display: none !important; }
+  .font-space { font-family: 'Space Grotesk', sans-serif; }
 
-  .font-space {
-    font-family: 'Space Grotesk', sans-serif;
-  }
-
-  /* Animación Cortina del Hero (Inmediata al cargar) */
   .animate-hero-reveal {
     transform: translateY(100%);
     animation: heroReveal 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 
-  @keyframes heroReveal {
-    to {
-      transform: translateY(0);
-    }
-  }
+  @keyframes heroReveal { to { transform: translateY(0); } }
 
-  /* Revelación Suave Estándar: Blindada contra fallas de layout */
   .reveal-slide {
     opacity: 0;
-    transform: translateY(30px);
-    filter: blur(4px);
-    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), 
-                transform 1s cubic-bezier(0.16, 1, 0.3, 1),
-                filter 1s cubic-bezier(0.16, 1, 0.3, 1);
-    will-change: transform, opacity;
+    transform: translateY(35px);
+    filter: blur(5px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+                filter 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity, filter;
   }
 
   .reveal-slide.active {
     opacity: 1;
     transform: translateY(0);
     filter: blur(0);
+  }
+
+  /* REFACTORIZACIÓN MAESTRA DE FILTROS MONOCROMÁTICOS EN CIAN PURE (#05FFD1) */
+  .tech-tag {
+    position: relative;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0E1720;
+    border: 1px solid #1F2E3D;
+    border-radius: 12px;
+    padding: 12px;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    color: #05FFD1;
+  }
+
+  /* Esta combinación elimina por completo los verdes y fuerza un cian monocromático puro */
+  .tech-tag img, .tech-tag svg {
+    width: 100%;
+    height: 100%;
+    transition: all 0.4s ease;
+    filter: brightness(0) saturate(100%) invert(84%) sepia(34%) saturate(4155%) hue-rotate(115deg) brightness(102%) contrast(105%) opacity(0.85);
+  }
+
+  .tech-tag:hover {
+    transform: translateY(-5px) scale(1.06);
+    border-color: #05FFD1;
+    background: #12252E;
+    box-shadow: 0 0 22px rgba(5, 255, 209, 0.3);
+  }
+
+  .tech-tag:hover img, .tech-tag:hover svg {
+    filter: brightness(0) saturate(100%) invert(84%) sepia(34%) saturate(4155%) hue-rotate(115deg) brightness(120%) contrast(105%) opacity(1) drop-shadow(0 0 5px #05FFD1);
+  }
+
+  .tech-tag::after {
+    content: attr(data-label);
+    position: absolute;
+    top: -38px;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    background: #0D131A;
+    border: 1px solid #05FFD1;
+    color: #05FFD1;
+    font-family: monospace;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 6px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    white-space: nowrap;
+    z-index: 50;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+  }
+
+  .tech-tag:hover::after {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
   }
 </style>
