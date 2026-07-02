@@ -126,18 +126,24 @@ import '../styles/global.css';
         </div>
       </section>
 
-      <!-- 2. EXPERIENCIA Y FORMACIÓN -->
-<section id="experiencia" class="py-32 bg-[#090D12]/80 backdrop-blur-sm border-t border-[#1F2E3D] relative z-10">
-  <div class="max-w-6xl mx-auto px-6">
+      <!-- 2. EXPERIENCIA Y FORMACIÓN (CON FONDO DE DESTELLOS INTEGRADO) -->
+<section id="experiencia" class="py-32 bg-transparent border-t border-[#1F2E3D]/50 relative z-10 overflow-hidden">
+        
+        <div class="absolute inset-0 pointer-events-none z-0 opacity-30 mix-blend-screen">
+          <div class="absolute top-1/4 left-1/4 w-[600px] h-[600px] bg-[#05FFD1]/10 rounded-full blur-[130px]"></div>
+          <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[#00F2FE]/5 rounded-full blur-[130px]"></div>
+        </div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
     <div class="mb-16 text-center">
       <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-2">// LÍNEA DE TIEMPO</h2>
       <h3 class="text-4xl font-bold font-space text-slate-100">Experiencia y Formación</h3>
     </div>
 
-    <!-- El contenedor padre gestionará filas completas en pantallas medianas/grandes -->
+    <!-- Contenedor principal de filas -->
     <div class="space-y-8 md:space-y-12">
       
-      <!-- ENCABEZADOS DE COLUMNA -->
+      <!-- ENCABEZADOS DE COLUMNA (SÓLO VISIBLES EN MD HACIA ARRIBA) -->
       <div class="hidden md:grid md:grid-cols-2 gap-12">
         <h4 class="text-lg font-space text-[#05FFD1] font-bold tracking-wider uppercase">// EXPERIENCIA PROFESIONAL</h4>
         <h4 class="text-lg font-space text-[#05FFD1] font-bold tracking-wider uppercase">// EDUCACIÓN ACADÉMICA</h4>
@@ -240,7 +246,7 @@ import '../styles/global.css';
 </section>
 
       <!-- 3. HABILIDADES, ARSENAL Y CERTIFICACIONES -->
-      <section id="habilidades" class="py-32 bg-[#090D12]/80 backdrop-blur-sm border-t border-[#1F2E3D] relative z-10">
+      <section id="habilidades" class="py-32 bg-transparent border-t border-[#1F2E3D]/50 relative z-10">
         <div class="max-w-6xl mx-auto px-6">
           
           <div class="mb-20 text-center">
