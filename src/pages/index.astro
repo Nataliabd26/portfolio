@@ -111,14 +111,15 @@ import '../styles/global.css';
             </div>
           </div>
           <div class="md:col-span-8 space-y-6 reveal-slide" style="transition-delay: 0.1s;">
-            <span class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest">// PERFIL PROFESIONAL</span>
+            <span class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest">// SOBRE MI</span>
             <h2 class="text-3xl font-bold font-space text-slate-100">Resolviendo flujos analíticos complejos</h2>
             <p class="text-slate-400 leading-relaxed">
               Mi trayectoria combina una base rigurosa en los dos primeros cursos de <strong>Ingeniería Informática (UCLM)</strong> con la especialización práctica del doble grado en <strong>DAM y DAW</strong>. Mi paso por entornos industriales altamente automatizados y mi experiencia como becaria en el <strong>Dto. Data & IA</strong> me han dotado de una mentalidad analítica habituada a la arquitectura limpia de procesos y la gestión avanzada de bases de datos. Además, soy comunicativa, resolutiva y tengo facilidad para trabajar en equipo.
             </p>
             <div class="flex flex-wrap gap-3 font-mono text-[11px] text-[#05FFD1]">
-              <span class="px-3 py-1 bg-[#141E28] border border-[#1F2E3D] rounded-md">#DataEngineering</span>
               <span class="px-3 py-1 bg-[#141E28] border border-[#1F2E3D] rounded-md">#FullStack</span>
+              <span class="px-3 py-1 bg-[#141E28] border border-[#1F2E3D] rounded-md">#DataEngineering</span>
+              <span class="px-3 py-1 bg-[#141E28] border border-[#1F2E3D] rounded-md">#DataAnalyst</span>
               <span class="px-3 py-1 bg-[#141E28] border border-[#1F2E3D] rounded-md">#IndustrialAutomation</span>
             </div>
           </div>
@@ -126,72 +127,117 @@ import '../styles/global.css';
       </section>
 
       <!-- 2. EXPERIENCIA Y FORMACIÓN -->
-      <section id="experiencia" class="py-32 bg-[#090D12]/80 backdrop-blur-sm border-t border-[#1F2E3D] relative z-10">
-        <div class="max-w-6xl mx-auto px-6">
-          <div class="mb-16 text-center">
-            <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-2">// LÍNEA DE TIEMPO</h2>
-            <h3 class="text-4xl font-bold font-space text-slate-100">Experiencia y Formación</h3>
-          </div>
+<section id="experiencia" class="py-32 bg-[#090D12]/80 backdrop-blur-sm border-t border-[#1F2E3D] relative z-10">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="mb-16 text-center">
+      <h2 class="text-xs font-mono uppercase text-[#05FFD1] tracking-widest mb-2">// LÍNEA DE TIEMPO</h2>
+      <h3 class="text-4xl font-bold font-space text-slate-100">Experiencia y Formación</h3>
+    </div>
 
-          <div class="grid md:grid-cols-2 gap-12">
-            <div class="space-y-8">
-              <h4 class="text-lg font-space text-[#05FFD1] font-bold tracking-wider uppercase flex items-center gap-2 ">// EXPERIENCIA TRABAJADA</h4>
-              
-              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-3 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)]">
-                <div class="flex justify-between items-start">
-                  <div>
-                    <h5 class="text-lg font-bold text-slate-200">Técnica en Data & IA</h5>
-                    <span class="text-xs text-slate-400 font-mono">Inetum (Prácticas)</span>
-                  </div>
-                  <span class="text-xs bg-[#05FFD1]/10 text-[#05FFD1] font-mono px-2 py-1 rounded border border-[#05FFD1]/20">Data Stage</span>
-                </div>
-                <ul class="text-xs text-slate-400 space-y-2 list-disc list-inside">
-                  <li>Desarrollo y mantenimiento de procesos ETL con Pentaho Data Integration.</li>
-                  <li>Gestión y optimización de consultas SQL sobre Oracle 12c y MySQL.</li>
-                  <li>Soporte en la automatización de procesos mediante Jenkins y Power BI.</li>
-                </ul>
-              </div>
+    <!-- El contenedor padre gestionará filas completas en pantallas medianas/grandes -->
+    <div class="space-y-8 md:space-y-12">
+      
+      <!-- ENCABEZADOS DE COLUMNA -->
+      <div class="hidden md:grid md:grid-cols-2 gap-12">
+        <h4 class="text-lg font-space text-[#05FFD1] font-bold tracking-wider uppercase">// EXPERIENCIA PROFESIONAL</h4>
+        <h4 class="text-lg font-space text-[#05FFD1] font-bold tracking-wider uppercase">// EDUCACIÓN ACADÉMICA</h4>
+      </div>
 
-              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-3 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)]" style="transition-delay: 0.1s;">
-                <div class="flex justify-between items-start">
-                  <div>
-                    <h5 class="text-lg font-bold text-slate-200">Operadora de Logística</h5>
-                    <span class="text-xs text-slate-400 font-mono">Laboratorios Indas / Joma Sport</span>
-                  </div>
-                  <span class="text-xs bg-[#05FFD1]/10 text-[#05FFD1] font-mono px-2 py-1 rounded border border-[#05FFD1]/20">Automatización</span>
-                </div>
-                <ul class="text-xs text-slate-400 space-y-2 list-disc list-inside">
-                  <li>Gestión de procesos logísticos en líneas de producción automatizadas.</li>
-                  <li>Manejo de sistemas digitales de inventario y preparación de pedidos.</li>
-                  <li>Control de stock y verificación de la trazabilidad en alta productividad.</li>
-                </ul>
+      <!-- FILA 1: INETUM + DAW -->
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-stretch">
+        <div class="block md:hidden"><h4 class="text-md font-space text-[#05FFD1] font-bold tracking-wider uppercase mb-4">// EXPERIENCIA PROFESIONAL</h4></div>
+        <!-- INETUM -->
+        <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-3 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)] flex flex-col justify-between">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <div>
+                <h5 class="text-lg font-bold text-slate-200">Técnica en Data & IA</h5>
+                <span class="text-xs text-slate-400 font-mono">Inetum (Prácticas)</span>
               </div>
+              <span class="text-xs bg-[#05FFD1]/10 text-[#05FFD1] font-mono px-2 py-1 rounded border border-[#05FFD1]/20">Data Stage</span>
             </div>
-
-            <div class="space-y-8">
-              <h4 class="text-lg font-space text-[#05FFD1] font-bold tracking-wider uppercase flex items-center gap-2">// EDUCACIÓN ACADÉMICA</h4>
-              
-              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)]">
-                <h5 class="text-lg font-bold text-slate-200">Técnico Superior en DAW</h5>
-                <span class="text-xs text-[#05FFD1] font-mono block">IES Julio Verne (Bargas, Toledo)(2025-2026)</span>
-                <p class="text-xs text-slate-400">Formación profesional oficial de grado superior orientada a la ingeniería de software web. Capacitación integral en el diseño, desarrollo y despliegue de aplicaciones y servicios digitales, abarcando tanto el desarrollo visual (Front-End) como la lógica de negocio y servidores (Back-End).</p>
-              </div>
-
-              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)]" style="transition-delay: 0.1s;">
-                <h5 class="text-lg font-bold text-slate-200">Técnico Superior en DAM</h5>
-                <span class="text-xs text-[#05FFD1] font-mono block">IES Julio Verne (Bargas, Toledo)(2023-2025)</span>
-                <p class="text-xs text-slate-400">Formación técnica enfocada en la creación, diseño e implementación de software robusto para diversos entornos y sistemas operativos. Especialista en la construcción de interfaces intuitivas y lógica de negocio escalable, con un fuerte enfoque en la programación orientada a objetos y la gestión de bases de datos.</p>
-              </div>
-
-              <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)]" style="transition-delay: 0.2s;">
-                <h5 class="text-lg font-bold text-slate-200">Grado en Ingeniería Informática (1º y 2º)</h5>
-                <span class="text-xs text-[#05FFD1] font-mono block">UCLM - Universidad de Castilla-La Mancha (2019-2022)</span>
-                <p class="text-xs text-slate-400">Sólida base en fundamentos matemáticos, estructuras de datos, arquitectura de computadores y metodologías de desarrollo.Formación orientada a la resolución de problemas lógicos, el diseño de software y la optimización de sistemas.</p>
-              </div>
-            </div>
+            <ul class="text-xs text-slate-400 space-y-2 list-disc list-inside">
+              <li>Desarrollo y mantenimiento de procesos ETL con Pentaho Data Integration.</li>
+              <li>Gestión y optimización de consultas SQL sobre Oracle 12c y MySQL.</li>
+              <li>Soporte en la automatización de procesos mediante Jenkins y Power BI.</li>
+            </ul>
           </div>
         </div>
-      </section>
+
+        <div class="block md:hidden mt-6"><h4 class="text-md font-space text-[#05FFD1] font-bold tracking-wider uppercase mb-4">// EDUCACIÓN ACADÉMICA</h4></div>
+        <!-- DAW -->
+        <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)] flex flex-col justify-between">
+          <div>
+            <h5 class="text-lg font-bold text-slate-200">Técnico Superior en DAW</h5>
+            <span class="text-xs text-[#05FFD1] font-mono block mb-2">IES Julio Verne (Bargas, Toledo) • (2025-2026)</span>
+            <p class="text-xs text-slate-400 leading-relaxed">Formación profesional oficial de grado superior orientada a la ingeniería de software web. Capacitación integral en el diseño, desarrollo y despliegue de aplicaciones y servicios digitales, abarcando tanto el desarrollo visual (Front-End) como la lógica de negocio y servidores (Back-End).</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILA 2: ANDROID + DAM -->
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-stretch">
+        <!-- JULIO VERNE APP -->
+        <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-3 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)] flex flex-col justify-between" style="transition-delay: 0.1s;">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <div>
+                <h5 class="text-lg font-bold text-slate-200">Desarrolladora Android</h5>
+                <span class="text-xs text-slate-400 font-mono">IES Julio Verne (Prácticas)</span>
+              </div>
+              <span class="text-xs bg-[#05FFD1]/10 text-[#05FFD1] font-mono px-2 py-1 rounded border border-[#05FFD1]/20">Mobile Stage</span>
+            </div>
+            <ul class="text-xs text-slate-400 space-y-2 list-disc list-inside">
+              <li>Diseño y desarrollo de una aplicación móvil nativa para la gestión interna del centro educativo.</li>
+              <li>Implementación de módulos críticos: control de horarios de profesores y sistema automatizado de partes de incidencias.</li>
+              <li>Modelado de la base de datos local y sincronización de flujos de datos según el rol del usuario.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- DAM -->
+        <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)] flex flex-col justify-between" style="transition-delay: 0.1s;">
+          <div>
+            <h5 class="text-lg font-bold text-slate-200">Técnico Superior en DAM</h5>
+            <span class="text-xs text-[#05FFD1] font-mono block mb-2">IES Julio Verne (Bargas, Toledo) • (2023-2025)</span>
+            <p class="text-xs text-slate-400 leading-relaxed">Formación técnica enfocada en la creación, diseño e implementación de software robusto para diversos entornos y sistemas operativos. Especialista en la construcción de interfaces intuitivas y lógica de negocio escalable, con un fuerte enfoque en la programación orientada a objetos y la gestión de bases de datos.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FILA 3: LOGÍSTICA + UCLM -->
+      <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-stretch">
+        <!-- LOGÍSTICA -->
+        <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-3 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)] flex flex-col justify-between" style="transition-delay: 0.2s;">
+          <div class="space-y-3">
+            <div class="flex justify-between items-start">
+              <div>
+                <h5 class="text-lg font-bold text-slate-200">Operadora de Logística</h5>
+                <span class="text-xs text-slate-400 font-mono">Laboratorios Indas / Joma Sport</span>
+              </div>
+              <span class="text-xs bg-[#05FFD1]/10 text-[#05FFD1] font-mono px-2 py-1 rounded border border-[#05FFD1]/20">Automatización</span>
+            </div>
+            <ul class="text-xs text-slate-400 space-y-2 list-disc list-inside">
+              <li>Gestión de procesos logísticos en líneas de producción automatizadas.</li>
+              <li>Manejo de sistemas digitales de inventario y preparación de pedidos.</li>
+              <li>Control de stock y verificación de la trazabilidad en alta productividad.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- UCLM -->
+        <div class="p-6 bg-[#141E28]/50 border border-[#1F2E3D] rounded-2xl reveal-slide space-y-2 transition-all duration-300 hover:border-[#05FFD1]/40 hover:bg-[#141E28]/80 hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(5,255,209,0.05)] flex flex-col justify-between" style="transition-delay: 0.2s;">
+          <div>
+            <h5 class="text-lg font-bold text-slate-200">Grado en Ingeniería Informática (1º y 2º)</h5>
+            <span class="text-xs text-[#05FFD1] font-mono block mb-2">UCLM - Universidad de Castilla-La Mancha • (2019-2022)</span>
+            <p class="text-xs text-slate-400 leading-relaxed">Sólida base en fundamentos matemáticos, estructuras de datos, arquitectura de computadores y metodologías de desarrollo. Formación orientada a la resolución de problemas lógicos, el diseño de software y la optimización de sistemas.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       <!-- 3. HABILIDADES, ARSENAL Y CERTIFICACIONES -->
       <section id="habilidades" class="py-32 bg-[#090D12]/80 backdrop-blur-sm border-t border-[#1F2E3D] relative z-10">
